@@ -63,3 +63,34 @@ graph LR
     end
     class Legend frame
 ```
+
+## Component
+```mermaid
+graph LR
+    %% C4 style classes c4model.com %%
+    classDef container fill:#1168bd,stroke:#000,color:#FFF;
+    classDef component fill:#7ebced,stroke:#000,color:#FFF;
+    classDef database fill:#1168bd,stroke:#000,color:#FFF;
+    classDef existing fill:#999999,stroke:#000,color:#FFF;
+    classDef boundary fill:#FFF,stroke:#000,stroke-width:2px,stroke-dasharray: 5 5;
+    classDef frame fill:#FFF,stroke:#000
+
+    %% nodes %%
+    Container["Other Container"]:::container
+    Component:::component
+    ExistingSystem["Software System,<br>Existing System"]:::existing
+    Database[(Database)]:::database
+
+    %% connections and boundaries %%
+    
+    subgraph Legend
+        Container-.->|Relationship| Component
+        subgraph Boundary["Boundary: Container"]
+            Component
+        end
+        Component-.->|Relationship| ExistingSystem
+        Component-.->Database
+        class Boundary boundary
+    end
+    class Legend frame
+```
