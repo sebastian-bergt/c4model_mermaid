@@ -7,17 +7,25 @@ Using the excellent [C4 model](https://c4model.com/) to create diagrams in [merm
 
 ```mermaid
 graph LR
-    %% C4 classes c4model.com%%
+    %% C4 style classes c4model.com %%
     classDef person fill:#08427b,color:#FFF;
     classDef software fill:#1168bd,color:#FFF;
     classDef existing fill:#999999,color:#FFF;
     classDef boundary fill:#FFF,stroke:#000,stroke-width:2px,stroke-dasharray: 5 5;
     classDef frame fill:#FFF,stroke:#000
 
+    %% nodes %%
+    Person((Person)):::person
+    SoftwareSystem:::software
+    ExistingSystem["Software System,<br>Existing System"]:::existing
+
+    %% connections and boundaries %%
+    
     subgraph Legend
-        Person((Person)):::person-.->|Relationship| SoftwareSystem:::software
+        Person-.->|Relationship| SoftwareSystem
         subgraph Boundary
-            SoftwareSystem-.->|Relationship| ExistingSystem["Software System,<br>Existing System"]:::existing
+            
+            SoftwareSystem-.->|Relationship| ExistingSystem
         end
         class Boundary boundary
     end
