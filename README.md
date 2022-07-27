@@ -57,7 +57,7 @@ graph LR
         Person-.->|Relationship| SoftwareSystem
         subgraph Boundary
             SoftwareSystem-.->|Relationship| ExistingSystem
-            SoftwareSystem-.->Database
+            SoftwareSystem-.->|Relationship| Database
         end
         class Boundary boundary
     end
