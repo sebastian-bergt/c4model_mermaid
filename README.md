@@ -24,7 +24,6 @@ graph LR
     subgraph Legend
         Person-.->|Relationship| SoftwareSystem
         subgraph Boundary
-            
             SoftwareSystem-.->|Relationship| ExistingSystem
         end
         class Boundary boundary
@@ -32,4 +31,35 @@ graph LR
     class Legend frame
 ```
 
-## 
+## Container
+
+Note: app and browser are containers too
+
+```mermaid
+graph LR
+    %% C4 style classes c4model.com %%
+    classDef person fill:#08427b,stroke:#000,color:#FFF;
+    classDef container fill:#1168bd,stroke:#000,color:#FFF;
+    classDef database fill:#1168bd,stroke:#000,color:#FFF;
+    classDef existing fill:#999999,stroke:#000,color:#FFF;
+    classDef boundary fill:#FFF,stroke:#000,stroke-width:2px,stroke-dasharray: 5 5;
+    classDef frame fill:#FFF,stroke:#000
+
+    %% nodes %%
+    Person((Person)):::person
+    SoftwareSystem:::container
+    ExistingSystem["Software System,<br>Existing System"]:::existing
+    Database[(Database)]:::database
+
+    %% connections and boundaries %%
+    
+    subgraph Legend
+        Person-.->|Relationship| SoftwareSystem
+        subgraph Boundary
+            SoftwareSystem-.->|Relationship| ExistingSystem
+            SoftwareSystem-.->Database
+        end
+        class Boundary boundary
+    end
+    class Legend frame
+```
