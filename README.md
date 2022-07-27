@@ -9,8 +9,8 @@ Using the excellent [C4 model](https://c4model.com/) to create diagrams in [merm
 graph LR
     %% C4 style classes c4model.com %%
     classDef person fill:#08427b,color:#FFF;
-    classDef software fill:#1168bd,color:#FFF;
-    classDef existing fill:#999999,color:#FFF;
+    classDef software fill:#1168bd,stroke:#000,color:#FFF;
+    classDef existing fill:#999999,stroke:#000,color:#FFF;
     classDef boundary fill:#FFF,stroke:#000,stroke-width:2px,stroke-dasharray: 5 5;
     classDef frame fill:#FFF,stroke:#000
 
