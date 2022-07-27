@@ -55,7 +55,7 @@ graph LR
     
     subgraph Legend
         Person-.->|Relationship| SoftwareSystem
-        subgraph Boundary
+        subgraph Boundary["Boundary: System under development"]
             SoftwareSystem-.->|Relationship| Database
         end
         class Boundary boundary
