@@ -3,7 +3,7 @@
 Using the excellent [C4 model](https://c4model.com/) to create diagrams in [mermaid](https://github.com/mermaid-js/mermaid).
 
 
-## Context 
+## Level 1: Context 
 
 ```mermaid
 graph LR
@@ -31,7 +31,7 @@ graph LR
     class Legend frame
 ```
 
-## Container
+## Level 2: Container
 
 Note: app and browser are containers too
 
@@ -64,7 +64,7 @@ graph LR
     class Legend frame
 ```
 
-## Component
+## Level 3: Component
 ```mermaid
 graph LR
     %% C4 style classes c4model.com %%
