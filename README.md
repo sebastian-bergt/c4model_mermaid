@@ -56,10 +56,10 @@ graph LR
     subgraph Legend
         Person-.->|Relationship| SoftwareSystem
         subgraph Boundary
-            SoftwareSystem-.->|Relationship| ExistingSystem
             SoftwareSystem-.->|Relationship| Database
         end
         class Boundary boundary
+        SoftwareSystem-.->|Relationship| ExistingSystem
     end
     class Legend frame
 ```
