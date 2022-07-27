@@ -1,7 +1,6 @@
-# c4model_mermaid
+# C4 Model and Mermaid
 
 Using the excellent [C4 model](https://c4model.com/) to create diagrams in [mermaid](https://github.com/mermaid-js/mermaid).
-
 
 ## Level 1: Context 
 
