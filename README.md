@@ -9,11 +9,11 @@ All the templates have been prepared and tested with [Mermaid Live Editor](https
 ```mermaid
 graph LR
     %% C4 style classes c4model.com %%
-    classDef person fill:#08427b,stroke:#000,color:#FFF;
-    classDef software fill:#1168bd,stroke:#000,color:#FFF;
-    classDef existing fill:#999999,stroke:#000,color:#FFF;
-    classDef boundary fill:#FFF,stroke:#000,stroke-width:2px,stroke-dasharray: 5 5;
-    classDef frame fill:#FFF,stroke:#000
+    classDef person fill:#08427b,stroke:black,color:white;
+    classDef software fill:#1168bd,stroke:black,color:white;
+    classDef existing fill:#999999,stroke:black,color:white;
+    classDef boundary fill:white,stroke:black,stroke-width:2px,stroke-dasharray: 5 5;
+    classDef frame fill:white,stroke:black;
 
     %% nodes %%
     Person((Person)):::person
@@ -39,12 +39,14 @@ Note: app and browser are containers too
 ```mermaid
 graph LR
     %% C4 style classes c4model.com %%
-    classDef person fill:#08427b,stroke:#000,color:#FFF;
-    classDef container fill:#1168bd,stroke:#000,color:#FFF;
-    classDef database fill:#1168bd,stroke:#000,color:#FFF;
-    classDef existing fill:#999999,stroke:#000,color:#FFF;
-    classDef boundary fill:#FFF,stroke:#000,stroke-width:2px,stroke-dasharray: 5 5;
-    classDef frame fill:#FFF,stroke:#000
+    classDef person fill:#08427b,stroke:black,color:white;
+    classDef container fill:#1168bd,stroke:black,color:white;
+    classDef database fill:#1168bd,stroke:black,color:white;
+    classDef software fill:#1168bd,stroke:black,color:white;
+    classDef existing fill:#999999,stroke:black,color:white;
+    classDef boundary fill:white,stroke:black,stroke-width:2px,stroke-dasharray: 5 5;
+    classDef frame fill:white,stroke:black;
+
 
     %% nodes %%
     Person((Person)):::person
@@ -69,12 +71,13 @@ graph LR
 ```mermaid
 graph LR
     %% C4 style classes c4model.com %%
-    classDef container fill:#1168bd,stroke:#000,color:#FFF;
-    classDef component fill:#7ebced,stroke:#000,color:#FFF;
-    classDef database fill:#1168bd,stroke:#000,color:#FFF;
-    classDef existing fill:#999999,stroke:#000,color:#FFF;
-    classDef boundary fill:#FFF,stroke:#000,stroke-width:2px,stroke-dasharray: 5 5;
-    classDef frame fill:#FFF,stroke:#000
+    classDef container fill:#1168bd,stroke:black,color:white;
+    classDef component fill:#7ebced,stroke:black,color:white;
+    classDef database fill:#1168bd,stroke:black,color:white;
+    classDef software fill:#1168bd,stroke:black,color:white;
+    classDef existing fill:#999999,stroke:black,color:white;
+    classDef boundary fill:white,stroke:black,stroke-width:2px,stroke-dasharray: 5 5;
+    classDef frame fill:white,stroke:black;
 
     %% nodes %%
     Container["Other Container"]:::container
