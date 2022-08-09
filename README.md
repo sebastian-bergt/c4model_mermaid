@@ -10,7 +10,7 @@ All the templates have been prepared and tested with [Mermaid Live Editor](https
 graph LR
     %% C4 style classes c4model.com %%
     classDef person fill:#08427b,stroke:black,color:white;
-    classDef software fill:#1168bd,stroke:black,color:white;
+    classDef software fill:#08427b,stroke:black,color:white;
     classDef existing fill:#999999,stroke:black,color:white;
     classDef boundary fill:white,stroke:black,stroke-width:2px,stroke-dasharray: 5 5;
     classDef frame fill:white,stroke:black;
@@ -42,7 +42,7 @@ graph LR
     classDef person fill:#08427b,stroke:black,color:white;
     classDef container fill:#1168bd,stroke:black,color:white;
     classDef database fill:#1168bd,stroke:black,color:white;
-    classDef software fill:#1168bd,stroke:black,color:white;
+    classDef software fill:#08427b,stroke:black,color:white;
     classDef existing fill:#999999,stroke:black,color:white;
     classDef boundary fill:white,stroke:black,stroke-width:2px,stroke-dasharray: 5 5;
     classDef frame fill:white,stroke:black;
@@ -74,7 +74,7 @@ graph LR
     classDef container fill:#1168bd,stroke:black,color:white;
     classDef component fill:#7ebced,stroke:black,color:white;
     classDef database fill:#1168bd,stroke:black,color:white;
-    classDef software fill:#1168bd,stroke:black,color:white;
+    classDef software fill:#08427b,stroke:black,color:white;
     classDef existing fill:#999999,stroke:black,color:white;
     classDef boundary fill:white,stroke:black,stroke-width:2px,stroke-dasharray: 5 5;
     classDef frame fill:white,stroke:black;
